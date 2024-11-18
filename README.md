@@ -71,7 +71,7 @@ print("Evaluation Results:", evaluation_results_peft)
 ![image](https://github.com/user-attachments/assets/ccef017d-a823-4b4e-936c-5393d73de6c5)
 
 
-The model accuracy is 91%, which is better than original model (84%)
+The model accuracy is 91%, which is better than original model (85%)
 
 
 # IV. Performing Inference with a PEFT Model
@@ -83,4 +83,4 @@ Most of the predictions are matched with the labels. For the final records, the 
 
 # V. Conclusion
 - Using the fine tuning can help to train the new LLM mode with small number of parameters but still efficient. The weights are freezed so we can focus on the changed parameters and can save the resource for training.
-- The fine tuning model have better accuracy comparing to the original model (91% vs 84%)
+- The fine tuning model have better accuracy comparing to the original model (91% vs 85%)
