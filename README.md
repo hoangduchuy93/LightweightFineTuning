@@ -68,3 +68,19 @@ evaluation_results_peft = trainer_ft.evaluate()
 print("Evaluation Results:", evaluation_results_peft)
 ```
 
+![image](https://github.com/user-attachments/assets/ccef017d-a823-4b4e-936c-5393d73de6c5)
+
+
+The model accuracy is 91%, which is better than original model (84%)
+
+
+# IV. Performing Inference with a PEFT Model
+Load the saved PEFT model weights and evaluate the performance of the trained PEFT model. Be sure to compare the results to the results from prior to fine-tuning.
+Randomly pick some records from testing dataset to check the predictions
+![image](https://github.com/user-attachments/assets/3c0af1bb-e779-4f95-8dda-f74d3d1128f0)
+
+Most of the predictions are matched with the labels. For the final records, the prediction is wrong (it is actually a spam). Overall the model can recognize quite good between spam and not spam messages.
+
+# V. Conclusion
+- Using the fine tuning can help to train the new LLM mode with small number of parameters but still efficient. The weights are freezed so we can focus on the changed parameters and can save the resource for training.
+- The fine tuning model have better accuracy comparing to the original model (91% vs 84%)
